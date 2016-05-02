@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact | Katik - Kalkulator Matematik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">   
+    <link rel="stylesheet" href="/font-awesome-4.6.1/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'> 
+    <link rel="shortcut icon" href="/images/katik-logo.png">
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>    
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+        var myCenter = new google.maps.LatLng(-3.7599931, 102.2703083);
+
+        function initialize() {
+        var mapProp = {
+        center:myCenter,
+        zoom:12,
+        scrollwheel:false,
+        draggable:false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker = new google.maps.Marker({
+        position:myCenter,
+        });
+
+        marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <style>
+        .btn {
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            border-radius: 0;
+            transition: .2s;
+        }
+        .btn:hover, .btn:focus {
+            border: 1px solid #2980b9;
+            background-color: #fff;
+            color: #2980b9;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="/images/katik-logo.png" alt="Katik Logo" title="Katik - Kalkulator Matematik" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../about">About</a></li>
+                    <li class="active"><a href="../contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>Katik <small style="color: #d5d5d5 !important;">Kalkulator Matematik</small></h1>
+    </div>
+    <div class="container">
+        <div class="homepage">            
+            <h2 class="text-center">Contact</h2>
+            <div class="row test">
+                <div class="col-md-4">
+                    <br /><br /><br />
+                    <p>Sobat Punya Kritik, Saran, atau Pertanyaan?</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Bengkulu, Indonesia</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> +62 896 9085 6593</p>
+                    <p class="mail"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:rmalan09@outlook.com"> rmalan09@outlook.com</a></p>
+                    <div id="social-nav">
+                        <ul>
+                            <!-- Facebook -->
+                            <li data-toggle="tooltip" data-placement="bottom" data-title="Like Me!" data-trigger="hover">
+                                <a href="https://facebook.com/maulanarakaa" class="facebook-color social-media" target="blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+
+                            <!-- Instagram -->
+                            <li data-toggle="tooltip" data-placement="bottom" data-title="Love Me!" data-trigger="hover">
+                                <a href="https://instagram.com/maulanarakaa" class="instagram-color social-media" target="blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+
+                            <!-- Twitter -->
+                            <li data-toggle="tooltip" data-placement="bottom" data-title="Follow Me!" data-trigger="hover">
+                                <a href="https://twitter.com/maulana_rakaa" class="twitter-color social-media" target="blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+
+                            <!-- Flickr
+                            <li data-toggle="tooltip" data-placement="bottom" data-title="Discover us!" data-trigger="hover">
+                                <a href="#" class="flickr-color social-media"><i class="fa fa-flickr"></i></a>
+                            </li>
+                            -->
+
+                            <!-- Soundcloud
+                            <li data-toggle="tooltip" data-placement="bottom" data-title="Listen Me!" data-trigger="hover">
+                                <a href="#" class="soundcloud-color social-media" target="blank"><i class="fa fa-soundcloud"></i></a>
+                            </li>
+                            -->
+
+                            <!-- Tumblr
+                            <li data-toggle="tooltip" data-placement="bottom" data-title="Read Me!" data-trigger="hover">
+                                <a href="#" class="tumblr-color social-media" target="blank"><i class="fa fa-tumblr"></i></a>
+                            </li>
+                            -->
+
+                            <!-- GitHub -->
+                            <li data-toggle="tooltip" data-placement="bottom" data-title="Fork Me!" data-trigger="hover">
+                                <a href="https://github.com/rmalan" class="github-color social-media" target="blank"><i class="fa fa-github"></i></a>
+                            </li>
+
+                            <!-- Linkedin
+                            <li data-toggle="tooltip" data-placement="bottom" data-title="Hire us!" data-trigger="hover">
+                                <a href="#" class="linkedin-color social-media"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            -->
+
+                        </ul>
+                    </div>
+                </div>                
+                <div class="col-md-8">                        
+                <div id="googleMap" style="height:300px;width:100%;"></div>                                    
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <p>
+            Copyright 2016 <span class="glyphicon glyphicon-copyright-mark"></span> Katik All Rights Reserved<br />
+            Made with <span class="glyphicon glyphicon-heart"></span> Powered by <a href="https://azure.microsoft.com" re="nofollow" target="_blank">Microsoft Azure</a>
+        </p>
+    </footer>
+</body>
+</html>
