@@ -1,3 +1,2 @@
 # katik
-Katik - Kalkulator Matematik
-Web Apps Sederhana untuk Menghitung Luas dan Keliing Bangun Datar
+Katik - Kalkulator Matematik, Sebuah Web Apps Sederhana untuk Menghitung Luas dan Keliing Bangun Datar
